@@ -10,6 +10,15 @@
 </head>
 <body>
     <audio id="music" src="audio.mp3" loop></audio>
+    <div id="developerInfoCard4" class="dev-card-overlay" style="display: none;">
+        <div class="dev-card">
+            <h2>Game Over 10 Question completed</h2>
+            <h3>Please close the Website</h3>
+            <h3>Or if you want to play Refresh the game</h3>
+            <h2>Your Score: <span id="score"></span></h2>
+        </div>
+    </div>
+    
   
     <div id="developerInfoCard2" class="dev-card-overlay" style="display: none;">
         <div class="dev-card">
@@ -19,7 +28,7 @@
 
     <div id="developerInfoCard3" class="dev-card-overlay" style="display: none;">
         <div class="dev-card">
-            <h2>Game over !!!! Keep Playing</h2>
+            <h2>Wrong Answer !!!! Keep Playing</h2>
         </div>
     </div>
 
@@ -48,13 +57,14 @@
             <h2>Welcome to the Word Guessing Game!</h2>
             <h2>Rules of The game:</h2>
             <ul>
-                <li>You will be given a question with a hidden word.</li><br>
+                <li>You will be given a 10 question with a hidden word.</li><br>
                 <li>Type a letter to guess the word, one letter at a time.</li><br>
                 <li>The game is case-sensitive; you can use only lowercase letters.</li><br>
                 <li>If you guess wrong, your remaining chances decrease.</li><br>
                 <li>You have 10 chances to guess the word correctly.</li><br>
                 <li>You can ask for a hint, but it will cost you one chance.</li><br>
             </ul>
+            <h5>For Better Experience Play on Desktop!</h5>
             <button class="button-89" onclick="startGame()">Start Game</button>
         </div>
     </div>
@@ -65,7 +75,7 @@
             </h3>
             <div class="card-body">
               <input type="text" class="invisible1" maxlength="1">
-              <h5 id="boxes" align="center"></h5>
+              <h6 id="boxes" align="center"></h6>
               <p class="card-text">Question: <span id="question"></span></p>
               <span id="hint"></span></p>
               <p class="card-text">Remaining chances: <span id="chance"></span></p>
@@ -88,6 +98,7 @@
     </div>
    
     <script src="script.js"></script>
+    <script src="Question.js"></script>
      
     
 </body>
