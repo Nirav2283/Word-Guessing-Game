@@ -183,8 +183,9 @@ let chance;
 typingInput = document.querySelector(".invisible1");
 let randomIndex;
 let questionasked = 0;
+
 function wordGenerator() {
-    if(questionasked >= 10){
+    if(questionasked >= 5){
         endgame();
         return;
     }
@@ -307,7 +308,7 @@ function init(e) {
         } else {
             incorrect.push(key);
             chance--;
-            document.getElementById('wrong').textContent = incorrect
+            document.getElementById('wrong').textContent = incorrect.join(', ');
            
            
         }
